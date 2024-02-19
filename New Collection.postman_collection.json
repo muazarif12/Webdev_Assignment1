@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "68f91055-a0a6-49a9-b32a-da60891da29a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33000811"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5600/auth/signup",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDI0LTAyLTE4VDE2OjI3OjU4LjAxMVoiLCJhZ2UiOjIwLCJpYXQiOjE3MDgyNzM2NzgsImV4cCI6MTcwODM2MDA3OH0.0ClzQAGEe-ViIRq5_5lbvD_LW6OWbESwuYohkXrwe7U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"waris@mail.com\",\r\n    \"password\" : \"12345678\",\r\n    \"firstName\" : \"waris\",\r\n    \"lasrName\" : \"ahmer\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@123\",\r\n    \"password\" : \"12345678\",\r\n    \"firstName\" : \"admin\",\r\n    \"lasrName\" : \"123\",\r\n    \"admin\" : \"true\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/auth/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQDEyMyIsImNyZWF0ZWRBdCI6IjIwMjQtMDItMTlUMDc6MDk6MTUuODIxWiIsImFkbWluIjp0cnVlLCJpYXQiOjE3MDgzMjY1NTUsImV4cCI6MTcwODQxMjk1NX0.Hek6QlYxEZfx8O7ORPD-l14n_cqx_nUZEEBA9hyha-0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@123\",\r\n    \"password\" : \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/users/getUserByEmail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQDEyMyIsImNyZWF0ZWRBdCI6IjIwMjQtMDItMTlUMDc6MDk6MTUuODIxWiIsImFkbWluIjp0cnVlLCJpYXQiOjE3MDgzMjY1NTUsImV4cCI6MTcwODQxMjk1NX0.Hek6QlYxEZfx8O7ORPD-l14n_cqx_nUZEEBA9hyha-0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"email\" : \"waris@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/users/getUserByEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"users",
+						"getUserByEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/users/deleteUserByEmail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQDEyMyIsImNyZWF0ZWRBdCI6IjIwMjQtMDItMTlUMDc6MDk6MTUuODIxWiIsImFkbWluIjp0cnVlLCJpYXQiOjE3MDgzMjY1NTUsImV4cCI6MTcwODQxMjk1NX0.Hek6QlYxEZfx8O7ORPD-l14n_cqx_nUZEEBA9hyha-0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"email\" : \"waris@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/users/deleteUserByEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"users",
+						"deleteUserByEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/users/updateUserByEmail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQDEyMyIsImNyZWF0ZWRBdCI6IjIwMjQtMDItMTlUMDc6MDk6MTUuODIxWiIsImFkbWluIjp0cnVlLCJpYXQiOjE3MDgzMjY1NTUsImV4cCI6MTcwODQxMjk1NX0.Hek6QlYxEZfx8O7ORPD-l14n_cqx_nUZEEBA9hyha-0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"waris@mail.com\",\r\n    \"password\" : \"12345678\",\r\n    \"firstName\" : \"faaasti\",\r\n    \"lasrName\" : \"ahmer\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/users/updateUserByEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"users",
+						"updateUserByEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/books/addBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0xOVQwNzoyODo0MS42MTBaIiwiYWRtaW4iOnRydWUsImlhdCI6MTcwODMyNzcyMSwiZXhwIjoxNzA4NDE0MTIxfQ.1Twb3Z33rFYDTsIefhmNVJ7L4bdpDgLVOvSvnfx81_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\" : \"waris@mail.com\",    \r\n\"isbn\" : \"24214\",\r\n\"name\" : \"goldenapple\",\r\n\"year\" : \"2001\",\r\n\"genre\" : \"agag\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/books/addBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"books",
+						"addBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/books/deleteBookByIsbn",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0xOVQwNzoyODo0MS42MTBaIiwiYWRtaW4iOnRydWUsImlhdCI6MTcwODMyNzcyMSwiZXhwIjoxNzA4NDE0MTIxfQ.1Twb3Z33rFYDTsIefhmNVJ7L4bdpDgLVOvSvnfx81_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\" : \"24214\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/books/deleteBookByIsbn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"books",
+						"deleteBookByIsbn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/books/updateBookByIsbn",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0xOVQwNzoyODo0MS42MTBaIiwiYWRtaW4iOnRydWUsImlhdCI6MTcwODMyNzcyMSwiZXhwIjoxNzA4NDE0MTIxfQ.1Twb3Z33rFYDTsIefhmNVJ7L4bdpDgLVOvSvnfx81_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"isbn\" : \"24214\",\r\n\"name\" : \"goldenboy\",\r\n\"year\" : \"2001\",\r\n\"genre\" : \"agag\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/books/updateBookByIsbn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"books",
+						"updateBookByIsbn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/books/getByIsbn",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0xOVQwNzoyODo0MS42MTBaIiwiYWRtaW4iOnRydWUsImlhdCI6MTcwODMyNzcyMSwiZXhwIjoxNzA4NDE0MTIxfQ.1Twb3Z33rFYDTsIefhmNVJ7L4bdpDgLVOvSvnfx81_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"isbn\" : \"24214\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/books/getByIsbn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"books",
+						"getByIsbn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5600/books/getByIsbnWithUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwiY3JlYXRlZEF0IjoiMjAyNC0wMi0xOVQwNzoyODo0MS42MTBaIiwiYWRtaW4iOnRydWUsImlhdCI6MTcwODMyNzcyMSwiZXhwIjoxNzA4NDE0MTIxfQ.1Twb3Z33rFYDTsIefhmNVJ7L4bdpDgLVOvSvnfx81_E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isbn\" : \"24214\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5600/books/getByIsbnWithUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5600",
+					"path": [
+						"books",
+						"getByIsbnWithUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
